@@ -1,0 +1,9 @@
+<div class="prime-number-container">
+    <label for="">Enter number to check the number is prime or not</label>
+    <div class="checkPrime">
+        <input type="text" class="form-control extra" placeholder="Number..." aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="checkNumber">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="checkPrime()">Submit</button>
+    <br>{{result}}
+</div>
+

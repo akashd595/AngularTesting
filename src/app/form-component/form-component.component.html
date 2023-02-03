@@ -1,0 +1,42 @@
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+    <label for="userName">User Name</label>
+    <input type="text" name="userName" ngModel>
+    <br>
+    <label for="userEmail">User Email</label>
+    <input type="text" name="userEmail" ngModel>
+    <br>
+    <button class="btn">press</button>
+</form>
+
+<div class="output">
+    <ul>
+        <li>{{this.userData.userName}}</li>
+        <li>{{this.userData.userEmail}}</li>
+    </ul>
+</div>
+
+<p>
+	<button
+		type="button"
+		class="btn btn-outline-primary"
+		(click)="collapse.toggle()"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		Toggle with Function
+	</button>
+	<button
+		type="button"
+		class="btn btn-outline-primary ms-2"
+		(click)="isCollapsed = ! isCollapsed"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		Toggle with Two Way Binding
+	</button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+	<div class="card">
+		<div class="card-body">You can collapse this card by clicking one Toggle button</div>
+	</div>
+</div>

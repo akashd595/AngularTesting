@@ -1,0 +1,17 @@
+.boardRow{
+    background-color: black;
+    color: aliceblue;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.boardRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}

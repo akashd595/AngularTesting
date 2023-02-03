@@ -1,0 +1,13 @@
+<h1>Fibonacci Series</h1>
+<label for="fibo">Please enter any number </label>
+<input mdbInput type="text" id="form1" class="form-control" [(ngModel)]="fiboLimit" />
+<button type="button" class="btn btn-primary" (click)="generateFibonacciSeries()">Press</button>
+<div class="numbers">
+    <div *ngFor="let fibo of fiboSeries; let i=index" class="fiboNumbers">
+        {{this.fiboSeries[i]}}
+    </div>
+    
+</div>
+<label for="fibs">Sum of {{fiboSeries.length}} fibonacci numbers is {{sumOfFibonacci}}</label>
+
+<button type="button" class="btn btn-primary" (click)="exampleOfForLoop()">Press for ForLoop</button>

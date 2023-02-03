@@ -1,0 +1,24 @@
+.form-control{
+    width: 10%;
+}
+.fiboNumbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: dimgrey;
+    width: 5%;
+    margin: 0px 2px;
+    
+    color: white;
+}
+.btn-primary{
+    margin-top: 10px;
+    margin: 10px 10px;
+}
+.numbers{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}

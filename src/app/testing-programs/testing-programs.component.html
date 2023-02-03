@@ -1,0 +1,7 @@
+<h1>Please enter number </h1>
+<input type="text" id="userNumber" [(ngModel)]="num">
+<button (click)="factorsOfNumber()">Press</button>
+<div *ngFor="let pos of resultArray; let i = index">{{this.resultArray[i]}}</div>
+<!-- <div *ngFor="let pos of resultArray;">{{pos}}</div> -->
+
+

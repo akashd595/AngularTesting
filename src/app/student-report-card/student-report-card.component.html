@@ -1,0 +1,36 @@
+<div class="main-container">
+    <div class="inside-conatiner">
+        <div class="header">Student Report Card</div>
+        <!-- <div class="student-datas" *ngFor="let sdata of studentMarks;let i = index">
+            <div class="name">{{sdata.name}}</div>
+            <div class="gender">{{sdata.gender}}</div>
+            <div class="physics">{{sdata.physics}}</div>
+            <div class="maths">{{sdata.maths}}</div>
+            <div class="english">{{sdata.english}}</div>
+            <div class="totalMarks">{{sdata.physics + sdata.maths + sdata.english}}</div>
+            <div class="percentage">{{(sdata.physics + sdata.maths + sdata.english)/3 }}%</div>
+        </div> -->
+        
+            <table class="table1">
+                <tr>
+                    <th class="name">Name</th>
+                    <th class="gender">Gender</th>
+                    <th class="physics">Physics</th>
+                    <th class="maths">Maths</th>
+                    <th class="english">English</th>
+                    <th class="totalMarks">Total Marks</th>
+                    <th class="percentage">Percentage</th>
+                </tr>
+                <tr *ngFor="let sdata of studentMarks" class="table-info">
+                    <td class="name">{{sdata.name}}</td>
+                    <td class="gender">{{sdata.gender}}</td>
+                    <td class="physics">{{sdata.physics}}</td>
+                    <td class="maths">{{sdata.maths}}</td>
+                    <td class="english">{{sdata.english}}</td>
+                    <td class="totalMarks">{{sdata.physics + sdata.maths + sdata.english}}</td>
+                    <td class="percentage">{{(sdata.physics + sdata.maths + sdata.english)/3 }}%</td>
+                </tr>
+            </table>
+        
+    </div>
+</div>

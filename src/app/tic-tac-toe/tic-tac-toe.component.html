@@ -1,0 +1,12 @@
+<h1>Tic-Tac-Toe Game</h1>
+<div class="game-conatiner">
+    <div class="header-container">
+        <h2>chance </h2>
+    </div>
+    <div class="main-container" >
+        <div class="boardRow" *ngFor="let ind of gameBoard;let i = index">
+            {{gameBoard[i]}}
+        </div>
+        
+    </div>
+</div>
